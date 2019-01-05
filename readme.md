@@ -5,11 +5,15 @@ Test API for BOB
 ## Run App
 
 ```javaScript
+//WITH NPM
 // Install dependencies
 npm i
 
 // Start server
 npm start
+
+//WITH DOCKER
+docker-compose up
 ```
 
 ## Run Tests
