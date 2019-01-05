@@ -15,8 +15,9 @@
   },
   "scripts": {
     "start": "nodemon --exec babel-node server.js",
-    "test": "",
-    "test:coverage": ""
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "license": "ISC",
   "repository": {},
@@ -40,6 +41,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.10.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.9",
     "prettyjson": "*"
   }

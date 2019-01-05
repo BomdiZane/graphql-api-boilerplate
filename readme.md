@@ -14,10 +14,10 @@ npm start
 
 ## Run Tests
 
-API tests will be done with graphiql, the following commands are just placeholders which may be used later.
+API tests will be done with graphiql, the following commands are just placeholders which may be used later. At the moment this commands will just unit tests for the utils functions
 
 ```javaScript
-npm test
+npm t
 
 // Test coverage
 npm run test:coverage
