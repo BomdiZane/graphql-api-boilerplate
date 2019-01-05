@@ -1,6 +1,8 @@
 module.exports = server => {
     
-    const mongoose = require('mongoose'),
+    const graphqlHTTP = require('express-graphql'),
+        schema = require('./source/gql/schema'),
+        mongoose = require('mongoose'),
         path  = require('path'),
         expressSession = require('express-session'),
         bodyParser = require('body-parser'),
@@ -11,7 +13,7 @@ module.exports = server => {
         cors = require('cors'),
         { 
             database: { nosql: { connectionString, options }}, 
-            expressSessionOptions, envName, 
+            expressSessionOptions, graphqlRoute, envName, 
             appInfo: { url }
         } = require('./credentials'),
         routes = glob.sync(path.normalize(`${__dirname}/source/routes/*.js`));
@@ -22,6 +24,10 @@ module.exports = server => {
     server.use(helmet()); // Some header security
     server.use(logger('dev'));
     server.use(cors({ origin: url }));
+    server.use(graphqlRoute, graphqlHTTP({
+        schema,
+        graphiql: true
+    }));
 
     server.use(bodyParser.json());
     server.use(expressValidator());

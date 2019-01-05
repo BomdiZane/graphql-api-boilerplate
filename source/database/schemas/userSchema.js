@@ -51,7 +51,8 @@ module.exports = mongoose.Schema(
 		bags: {
 			type: Number,
 			set: val => Math.round(val),
-			min: [0, 'user cannot have less than zero bags']
+			min: [0, 'user cannot have less than zero bags'],
+			required: [true, 'Bags is required'],
 		}
 	},
 	{
