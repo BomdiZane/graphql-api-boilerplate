@@ -3,20 +3,17 @@ module.exports = server => {
     const graphqlHTTP = require('express-graphql'),
         schema = require('./source/gql/schema'),
         mongoose = require('mongoose'),
-        path  = require('path'),
         expressSession = require('express-session'),
         bodyParser = require('body-parser'),
         expressValidator = require('express-validator'),
         helmet  = require('helmet'),
         logger = require('morgan'),
-        glob = require('glob'),
         cors = require('cors'),
         { 
             database: { nosql: { connectionString, options }}, 
             expressSessionOptions, graphqlRoute, envName, 
             appInfo: { url }
-        } = require('./credentials'),
-        routes = glob.sync(path.normalize(`${__dirname}/source/routes/*.js`));
+        } = require('./credentials');
         
     mongoose.connect(connectionString, options, 
         err => err ? console.error(err) : console.log('Connected to database!'));
@@ -32,8 +29,6 @@ module.exports = server => {
     server.use(bodyParser.json());
     server.use(expressValidator());
     server.use(expressSession(expressSessionOptions));
-
-    routes.forEach(route => require(route)(server)); // Add all routes to scope
 
     // 404 handler
     server.use((req, res, next) => res.json({
