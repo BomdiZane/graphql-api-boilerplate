@@ -4,9 +4,9 @@ const env = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLo
 
 let config = {},
 	appInfo = {
-		name: 'full-stack-boilerplate-api',
-		description: 'API for full-stack boilerplate app',
-		keywords: 'full-stack, boilerplate, API',
+		name: 'graphql-api-boilerplate',
+		description: 'API boilerplate with Express, GraphQL and MongoDB (using Mongoose ODM)',
+		keywords: 'Express, GraphQL, MongoDB, Mongoose ODM, Boilerplate, API',
 		url: process.env.APP_URL,
 		author: 'Adombang Munang Mbomndih <dzedock@yahoo.com> (https://bomdisoft.com)',
 	},

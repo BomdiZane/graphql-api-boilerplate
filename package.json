@@ -1,11 +1,14 @@
 {
-  "name": "full-stack-boilerplate-api",
+  "name": "graphql-api-boilerplate",
   "version": "1.0.0",
-  "description": "API for Full-stack boilerplate app",
+  "description": "API boilerplate with Express, GraphQL and MongoDB (using Mongoose ODM)",
   "keywords": [
-    "full-stack",
-    "boilerplate",
-    "api"
+    "Express",
+    "GraphQL",
+    "MongoDB",
+    "Mongoose ODM",
+    "Boilerplate",
+    "API"
   ],
   "author": "Adombang Munang Mbomndih <dzedock@yahoo.com> (https://bomdisoft.com)",
   "contributors": [],

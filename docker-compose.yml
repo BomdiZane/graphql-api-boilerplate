@@ -2,7 +2,7 @@ version: '3'
 
 services: 
   api:
-    container_name: full-stack-boilerplate-api
+    container_name: graphql-api-boilerplate
     restart: always
     ports: 
       - '3001:3001'

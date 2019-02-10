@@ -1,7 +1,7 @@
 FROM node:10
 
 EXPOSE 3001
-WORKDIR /user/full-stack-boilerplate-api
+WORKDIR /user/graphql-api-boilerplate
 COPY . .
 RUN npm install
 

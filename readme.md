@@ -1,6 +1,6 @@
-# Full-stack boilerplate API
+# GraphQL API boilerplate
 
-API for Full-stack boilerplate app
+API boilerplate with Express, GraphQL and MongoDB (using Mongoose ODM)
 
 ## Start API
 
