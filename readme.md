@@ -1,8 +1,8 @@
-# BOB test API
+# Full-stack boilerplate API
 
-Test API for BOB
+API for Full-stack boilerplate app
 
-## Run App
+## Start API
 
 ```javaScript
 //WITH NPM

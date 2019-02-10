@@ -4,11 +4,11 @@ const env = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLo
 
 let config = {},
 	appInfo = {
-		name: 'bob-api',
-		description: 'Test api for bob user data',
-		keywords: 'bob, baggage, travel',
+		name: 'full-stack-boilerplate-api',
+		description: 'API for full-stack boilerplate app',
+		keywords: 'full-stack, boilerplate, API',
 		url: process.env.APP_URL,
-		author: 'Bomdi Munang <dzedock@yahoo.com> (https://bomdisoft.com)',
+		author: 'Adombang Munang Mbomndih <dzedock@yahoo.com> (https://bomdisoft.com)',
 	},
 	expressSessionOptions = {
 		secret: 'supersecret(!)',

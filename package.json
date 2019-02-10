@@ -1,13 +1,13 @@
 {
-  "name": "bob-test-api",
+  "name": "full-stack-boilerplate-api",
   "version": "1.0.0",
-  "description": "Test api for bob user data",
+  "description": "API for Full-stack boilerplate app",
   "keywords": [
-    "bob",
-    "baggage",
-    "travel"
+    "full-stack",
+    "boilerplate",
+    "api"
   ],
-  "author": "Bomdi Munang <dzedock@yahoo.com> (https://bomdisoft.com)",
+  "author": "Adombang Munang Mbomndih <dzedock@yahoo.com> (https://bomdisoft.com)",
   "contributors": [],
   "engines": {
     "node": ">=10.0.0",
